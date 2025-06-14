@@ -33,7 +33,6 @@ const { md } = Astro.props
 const { headings, Content } = await md.render()
 
 const isPageLayout = ['friends', 'projects'].includes(md.slug)
-const isMdContentEmpty = md.body.trim().length === 0
 ---
 
 {
@@ -48,7 +47,7 @@ const isMdContentEmpty = md.body.trim().length === 0
         </header>
         {md.slug === 'friends' && <FriendList />}
         {md.slug === 'projects' && <ProjectList />}
-        {!isMdContentEmpty && (
+        {md.data && (
           <MarkdownWrapper>
             <Content />
           </MarkdownWrapper>
@@ -83,7 +82,7 @@ const isMdContentEmpty = md.body.trim().length === 0
         </div>
         <div class="hidden lg:block" data-pagefind-ignore>
           <aside class="sticky top-20">
-            <SectionBlock title="目录">
+            <SectionBlock title="Table of Contents">
               <PostToc headings={headings} client:idle />
               <hr class="my-2 border-primary max-w-[100px]" />
               <ReadingProgress client:idle />
