@@ -14,9 +14,9 @@
     "avatar": "/bocchi.png"
   },
   "hero": {
-    "name": "Gyoza",
-    "bio": "A static blog template build with Astro and React.",
-    "description": "Clean, Cute, Fast.",
+    "name": "minasora",
+    "bio": "呟きあるある。ここに技術関連のブログを書いています。",
+    "description": "逃げちゃダメだ。",
     "socials": [
       {
         "name": "Github",
@@ -25,15 +25,21 @@
         "color": "rgb(24, 23, 23)"
       },
       {
-        "name": "X",
-        "icon": "icon-x",
-        "url": "https://x.com/_minazuki_sora",
-        "color": "rgb(36, 46, 54)"
-      },
-      {
         "name": "Email",
         "icon": "icon-mail",
         "url": "mailto:liboxiaohust@gmail.com",
+        "color": "rgb(212, 70, 56)"
+      },
+      {
+        "name": "LinkedIn",
+        "icon": "icon-pen",
+        "url": "https://www.linkedin.com/in/boxiao-li-2a3bb71a8/",
+        "color": "rgb(212, 70, 56)"
+      },
+      {
+        "name": "Google Scholar",
+        "icon": "icon-flask",
+        "url": "https://scholar.google.com/citations?user=jNDKIfYAAAAJ&hl=zh-CN",
         "color": "rgb(212, 70, 56)"
       }
     ],
